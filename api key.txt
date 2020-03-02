@@ -1,3 +1,0 @@
-17e1f1aaae37ba13bd1fb4c5f0b25d4a
-
-api.openweathermap.org/data/2.5/forecast?id={city ID}&appid={17e1f1aaae37ba13bd1fb4c5f0b25d4a}
