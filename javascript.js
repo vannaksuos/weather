@@ -30,8 +30,9 @@ function getWeather() {
 }
                
 function showResult(data){
-    return  "<p>Temperature: "+data.main.temp+" &deg;F</p>"+
-            "<p>humidity: "+data.main.humidity+"</p>"+
-            "<p>Wind Speed: "+data.wind.speed+"</p>";
+    return  "<p>City: "+data.name+"</p>"+
+            "<p>Temperature: "+data.main.temp+" &deg;F</p>"+
+            "<p>Humidity: "+data.main.humidity+"%</p>"+
+            "<p>Wind Speed: "+data.wind.speed+"m/s</p>";
             
         }

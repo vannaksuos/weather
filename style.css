@@ -17,39 +17,23 @@ body {
     background-color: white;
     border: none;
 }
-/* .weather{
-    color: #4aa1f3 !important;
-    font-size: 25px;
-    font-weight: 600; */
-/* } */
-/* #nav_list > li > a{
-    color: #4aa1f3 !important;
-    font-weight: 500;
-} */
 
 #logo{
     max-height: 42px;
     margin-right: 8px;
     display: inline-block;
     margin-top: -15px;
-
 }
 
-ul#list_item{
-    color:white;
-    font-size: 35px;
-    text-align: center;
-
-}
 #cityDiv{
    
     margin: auto;
     text-align: center;
 }
+
 input[type='text']{
     height: 40px;
     font-size: 20px;
-   
 }
 
 #submitCity {
@@ -57,7 +41,15 @@ input[type='text']{
     font-weight: bold;
 }
 
-
 #enterCity {
     color: black;
+}
+
+#showWeather {
+    margin: auto;
+    background-color: #4aa1f3;
+    color: white;
+    border-radius: 25px;
+    width: 60%;
+
 }
