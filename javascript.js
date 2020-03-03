@@ -5,8 +5,6 @@ $(document).ready(function(){
 
     });
 
-
-
 });
 
 function getWeather() {
@@ -31,10 +29,8 @@ function getWeather() {
 }
 }
                
-
-
 function showResult(data){
-    return  "<p>Temperature: "+data.main.temp+" %deg;F</p>"+
+    return  "<p>Temperature: "+data.main.temp+" &deg;F</p>"+
             "<p>humidity: "+data.main.humidity+"</p>"+
             "<p>Wind Speed: "+data.wind.speed+"</p>";
             
