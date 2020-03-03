@@ -18,22 +18,24 @@ function getWeather() {
             type: "GET",
             dataType:"jsonp",
             success: function(data){
+                console.log(data)
                 var widget = showResult(data)
                 $("#showWeather").html(widget);
                 $("#city").val('');
-            },
-            else {
-                $("#error").html("<div>City field cannot be empty</div>"),
             }
-        })
-    }
+           
+            }
+        )
+    } else {
+        $("#error").html("<div>City field cannot be empty</div>");
+}
 }
                
 
 
 function showResult(data){
-    return  "<p>Temperature: "+data.list.main.temp+" %deg;F</p>"+
-            "<p>humidity: "+data.list.main.humidity+"</p>"+
-            "<p>Wind Speed: "+data.list.wind.speed+"</p>"+
-            "<p>U/V Index: "+data.list.main.u/v+"</p>"
+    return  "<p>Temperature: "+data.main.temp+" %deg;F</p>"+
+            "<p>humidity: "+data.main.humidity+"</p>"+
+            "<p>Wind Speed: "+data.wind.speed+"</p>";
+            
         }
