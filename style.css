@@ -53,3 +53,9 @@ input[type='text']{
     width: 60%;
 
 }
+h3 {
+    padding-left: 40px;
+}
+h2 {
+    padding-top: 10px;
+}
