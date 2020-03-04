@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Weather App</title>
+        <title>Weather Forecast</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
        
@@ -15,7 +15,7 @@
                
                     <img src="images/13d.png" class="img-responsive" id="logo" alt="">
                     <img src="images/01d.png" class="img-responsive" id="logo" alt="">
-                    <img src="images/02d.png" class="img-responsive" id="logo" alt=""><strong>Weather App</strong>
+                    <img src="images/11d.png" class="img-responsive" id="logo" alt=""><strong>Weather Forecast</strong>
                     <img src="images/10d.png" class="img-responsive" id="logo" alt="">
                     
                
@@ -42,9 +42,7 @@
             </div>
         </div>
     </nav>
-    
-        
-        
+     
      <div class="jumbotron" style="margin-bottom: 0px; background-color: #4aa1f3; color: white">
             <h2 class="text-center" style="font-size:50px; font-weight:600;">Get 5 Days Weather Forecast</h2>
       </div>
@@ -55,15 +53,40 @@
                         </div>
       
                         <div class="row form-group form-inline" id="cityDiv">
-                            <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name"> <button id="submitCity" class="btn btn-primary">Search City</button>
+                            <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
+                            <input type="text" name="days" id="days" class="form-control" placeholder="Number:Min-1 Max-5"> 
+                            <button id="submitForecast" class="btn btn-primary">Search City</button>
                         </div>
-                       
-                        </div>
-    
-                        <div id="error"></div>
-                        <div id="showWeather"></div>
                 </div>
-             </div>
+            </div>
+
+            <div class="row col-md-8 padding-left: 20px;">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Icon</th>
+                        <th>Weather</th>
+                        <th>Humidity</th>
+                    </tr>
+                    </thead>
+                    <tbody id="forecastWeather">
+                   
+
+                    
+                    </tbody>
+                </table>
+            </div>
+
+
+      
+
+      
+    
+                       
+
+                      
+                      
+        
              
           
         
