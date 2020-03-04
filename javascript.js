@@ -2,6 +2,7 @@ $(document).ready(function(){
     
     $("#submitCity").click(function(){
         return getWeather();
+        
 
     });
 
@@ -42,3 +43,4 @@ function showResult(data){
 function showForeCast(data){
     return 
 }
+

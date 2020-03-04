@@ -23,7 +23,7 @@ function getForecast(){
                 for(var i = 0; i < data.list.length; i++){
                     table += "<tr>";
 
-                    table += "<td>" + data.list[i].weather[0].icon + "</td>"
+                    table += "<td><img src='http://openweathermap.org/img/w/"+data.list[i].weather[0].icon+".png'></td>";
                     table += "<td>" + data.list[i].main.temp + "&deg;F </td>"
                     table += "<td>" + data.list[i].main.humidity + "% </td>"
                     
