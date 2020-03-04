@@ -24,8 +24,8 @@ function getForecast(){
                     table += "<tr>";
 
                     table += "<td>" + data.list[i].weather[0].icon + "</td>"
-                    table += "<td>" + data.list[i].main.temp[0]+ "</td>"
-                    table += "<td>" + data.list[i].main.humidity[0] ;"</td>"
+                    table += "<td>" + data.list[i].main.temp + "&deg;F </td>"
+                    table += "<td>" + data.list[i].main.humidity + "% </td>"
                     
 
                     table += "</tr>";

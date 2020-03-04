@@ -32,7 +32,7 @@ function getWeather() {
 function showResult(data){
     return  '<h2 style="font-weight:bold; font-size:30px;" class="text-center">Current Weather for '+data.name+'</h2>'+
             "<h3> Weather: "+data.weather[0].main+"</h3>"+
-            "<h3>Temperature: "+data.main.temp+" &deg;F</h3>"+
+            "<h3>Temperature: "+data.main.temp+" &deg;F&deg;F</h3>"+
             "<h3>Description: <img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'> "+data.weather[0].description+"</h3>"+
             "<h3>Humidity: "+data.main.humidity+"%</h3>"+
             "<h3 style='padding-bottom:10px;'>Wind Speed: " +data.wind.speed+"m/s</h3>";
