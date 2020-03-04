@@ -19,9 +19,12 @@ function getForecast(){
             dataType: "jsonp",
             success: function(data){
                 var table = '';
+                var header = '<h2> Weather forecast for ' + data.city.name+ '</h2>'
                 console.log(data)
                 for(var i = 0; i < data.list.length; i++){
                     table += "<tr>";
+
+                
 
                     table += "<td><img src='http://openweathermap.org/img/w/"+data.list[i].weather[0].icon+".png'></td>";
                     table += "<td>" + data.list[i].main.temp + "&deg;F </td>"
@@ -32,6 +35,7 @@ function getForecast(){
                 }
 
                 $("#forecastWeather").html(table);
+                $("#header").html(header);
 
                 $("#city").val('');
 

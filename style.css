@@ -60,4 +60,18 @@ h2 {
     padding-top: 10px;
 }
 
-s
+table {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+th {
+    
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+td {
+    text-align: center;
+    font-size: 18px;
+}
