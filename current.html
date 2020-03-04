@@ -10,8 +10,39 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-default" id="nav_bar">
+    <div class="container">
+           
+                <img src="images/13d.png" class="img-responsive" id="logo" alt="">
+                <img src="images/01d.png" class="img-responsive" id="logo" alt="">
+                <img src="images/02d.png" class="img-responsive" id="logo" alt=""><strong>Weather App</strong>
+                <img src="images/10d.png" class="img-responsive" id="logo" alt="">
+                
+           
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     
-      <img src="images/11d.png" class="img-responsive" id="logo" alt=""><strong>Weather App</strong>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03"></div>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="current.html"><strong>Current</strong></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="forecast.html"><strong>5 Day Forecast</strong></a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+ 
+        <div class="collapse navbar-collapse" id="navcol">
+            <ul class="nav navbar-nav navbar-right" id="nav_list">
+                <li><a href="current.html">Current</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+        </div>
+    </div>
+</nav>
+
     
     
  <div class="jumbotron" style="margin-bottom: 0px; background-color: #4aa1f3; color: white">
@@ -33,13 +64,14 @@
                     <div id="showWeather"></div>
             </div>
          </div>
-     
-
+         
+      
     
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="javascript.js"></script>
+    <script src="forecast.js"></script>
     
    
 </body>

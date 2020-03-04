@@ -35,6 +35,10 @@ function showResult(data){
             "<h3>Temperature: "+data.main.temp+" &deg;F</h3>"+
             "<h3>Description: <img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'> "+data.weather[0].description+"</h3>"+
             "<h3>Humidity: "+data.main.humidity+"%</h3>"+
-            "<h3 style='padding-bottom:10px;'>Wind Speed:"+data.wind.speed+"m/s</h3>";
+            "<h3 style='padding-bottom:10px;'>Wind Speed: " +data.wind.speed+"m/s</h3>";
             
         }
+
+function showForeCast(data){
+    return 
+}
