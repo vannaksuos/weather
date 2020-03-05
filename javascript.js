@@ -3,7 +3,6 @@ $(document).ready(function(){
     $("#submitCity").click(function(){
         return getWeather();
         
-
     });
 
 });

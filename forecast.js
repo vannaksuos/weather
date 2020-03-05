@@ -1,10 +1,7 @@
 $(document).ready(function(){
     $("#submitForecast").click(function(){
         return getForecast();
-
     });
-
-
 
 });
 
@@ -47,12 +44,4 @@ function getForecast(){
     }else {
          $("#error").html("<div>City field cannot be empty</div>");
         }
-
-     
     }
-
-
-
-// THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-// WHEN I click on a city in the search history
-// THEN I am again presented with current and future conditions for that city
