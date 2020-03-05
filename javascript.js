@@ -1,3 +1,10 @@
+function getStorage(key) {
+    var value = localStorage.getItem(key);
+    if (value) {
+        $(`#text${key}`).text(value);
+    }
+}
+
 $(document).ready(function(){
     
     $("#submitCity").click(function(){
@@ -43,3 +50,9 @@ function showForeCast(data){
     return 
 }
 
+var submitCity = $('.submitCity');
+    submitCity.on('click', function() {
+        var taskId = $(this).attr('id');
+        var tasksText = $(this).parent().siblings().children('.tasks').val();
+        localStorage.setItem(taskId, tasksText);
+    });
