@@ -27,5 +27,4 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
-
- still need more work as IM still trying to figure out how to get the result to show and my forcast..may ask for more time to work on it
+I cant figure out how to put this all in one page and I didnt get to add teh u/v api, I also couldnt figure out how to use the localstorage to save the searches. 
